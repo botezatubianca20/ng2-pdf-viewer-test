@@ -8,6 +8,7 @@
       <button (click)="nextPage()" [disabled]="page === totalPages">
         Next
       </button>
+      <input type="number" min="1" [max]="totalPages" [(ngModel)]="page" />
     </div>
     <pdf-viewer
       [src]="src"
